@@ -4,78 +4,95 @@ print('Group Maker')
 
 print("Do you want groups of 2, 3, or 4?")
 
-decidegroupnum = input()
+decidegroupnum = float(input())
 
-if decidegroupnum == 2:
+while decidegroupnum:
+
+    if decidegroupnum == 2:
     
-    #Write down code in the group of table
+        print("Any constraints? If so, write the name of the people you pasted in the hardcode. ")
+        
+        constnam1 = input()
+        
+        constnam2 = input()
+        
+        
+   
+
+
+
+
+        table1 = []        #code for the table format down here
+        table2 = []
+        table3 = []
+        table4 = []
+        table5 = []
+        table6 = []
+        table7 = []
+        table8 = []
+        table9 = []
+        table10 = []
+        
+        
+        classList = ["Art", "Bart", "Cart", "Dart", "Eart", "Fart", "Gart", "Hart", "Iart", "Jart", "Kart", "Lart", "Mart", "Nart", "Oart", "Part", "Qart", "Rart", "Sart", "Tart"]
+        
+        tableNumber = 1
+        
+        randomPick = []
+        
+        while len(classList) > 0:
+          randomPick = random.choice(classList)
+          if tableNumber == 1:
+            table1.append(randomPick)
+          if tableNumber == 2:
+            table2.append(randomPick)
+          if tableNumber == 3:
+            table3.append(randomPick)
+          if tableNumber == 4:
+            table4.append(randomPick)
+          if tableNumber == 5:
+            table5.append(randomPick)
+          if tableNumber == 6:
+            table6.append(randomPick)
+          if tableNumber == 7:
+            table7.append(randomPick)
+          if tableNumber == 8:
+            table8.append(randomPick)
+          if tableNumber == 9:
+            table9.append(randomPick)
+          if tableNumber == 10:
+            table10.append(randomPick)
+            classList.remove(randomPick)
+          tableNumber = tableNumber + 1
+          if tableNumber == 11:
+            tableNumber = 1
+          
+        #2/28/26, modify table code by using len function to limit how much a class can have based off of each group
+        
+        print("Table 1: ", table1)
+        print("Table 2: ", table2)
+        print("Table 3: ", table3)
+        print("Table 4: ", table4)
+        print("Table 5: ", table5)
+        print("Table 6: ", table6)
+        print("Table 7: ", table7)
+        print("Table 8: ", table8)
+        print("Table 9: ", table9)
+        print("Table 10: ", table10)
+        
+        break    
     
-elif decidegroupnum == 3:
     
-    #write down code in group
+    elif decidegroupnum == 3:
     
-elif decidegroupnum == 4:
+        print("3")
+
+    elif decidegroupnum == 4:
     
-    #you know the drill
+        print("4")
     
-else 
-
-    print("2, 3 or 4!")
-
-
+    else:
+         print ("NO")
+         
 
 
-
-
-
-
-
-
-
-
-
-
-
-#code for the table format down here
-
-
-
-
-table1 = []
-table2 = []
-table3 = []
-table4 = []
-table5 = []
-table6 = []
-
-classList = []
-
-tableNumber = 1
-
-randomPick = []
-
-while len(classList) > 0:
-  randomPick = random.choice(classList)
-  if tableNumber == 1:
-    table1.append(randomPick)
-  if tableNumber == 2:
-    table2.append(randomPick)
-  if tableNumber == 3:
-    table3.append(randomPick)
-  if tableNumber == 4:
-    table4.append(randomPick)
-  if tableNumber == 5:
-    table5.append(randomPick)
-  if tableNumber == 6:
-    table6.append(randomPick)
-  classList.remove(randomPick)
-  tableNumber = tableNumber + 1
-  if tableNumber == 7:
-    tableNumber = 1
-
-print("Table 1: ", table1)
-print("Table 2: ", table2)
-print("Table 3: ", table3)
-print("Table 4: ", table4)
-print("Table 5: ", table5)
-print("Table 6: ", table6)
