@@ -1,5 +1,27 @@
 import random
 
+table1 = []        #code for the table format down here
+table2 = []
+table3 = []
+table4 = []
+table5 = []
+table6 = []
+table7 = []
+table8 = []
+table9 = []
+table10 = []
+
+#classList below, up to 20 students and must be hardcoded
+classList = ["Art", "Bart", "Cart", "Dart", "Eart", "Fart", "Gart", "Hart", "Iart", "Jart", "Kart", "Lart", "Mart", "Nart", "Oart", "Part", "Qart", "Rart", "Sart", "Tart"]
+
+
+
+tableNumber = 1
+
+#randomizes students in each group
+randomPick = []
+
+
 print('Group Maker')
 
 print("Do you want groups of 2, 3, or 4?")
@@ -7,92 +29,232 @@ print("Do you want groups of 2, 3, or 4?")
 decidegroupnum = float(input())
 
 while decidegroupnum:
-
+    
     if decidegroupnum == 2:
+        maxGroup = 2 #modifying dependent on how many people allowed in groups, you decide this when running the code
+        
+        print (f"If there is any constraint, type the number of the person in the hardcode in their order, starting from 1-20 \n For example... if you want the 5th person,(In your list this is {classList[4]})and the 8th person (In your list this is {classList[7]}) to not be together, type 5, then 8.\n If you don't care for any constraints. Type 0.")
+        #due to it being from 1-20 and index's working from 0-19 must add +1 to any value
+        constnum = float(input())
+        
+        if constnum == 0:
+            while len(classList) > 0:
     
-        print("Any constraints? If so, write the name of the people you pasted in the hardcode. ")
+                if tableNumber == 1:
+                    while tableNumber == 1:
+                        randomPick = random.choice(classList)
+                        table1.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table1) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 2:
+                    while tableNumber == 2:
+                        randomPick = random.choice(classList)
+                        table2.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table2) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 3:
+                    while tableNumber == 3:
+                        randomPick = random.choice(classList)
+                        table3.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table3) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 4:
+                    while tableNumber == 4:
+                        randomPick = random.choice(classList)
+                        table4.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table4) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 5:
+                    while tableNumber == 5:
+                        randomPick = random.choice(classList)
+                        table5.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table5) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 6:
+                    while tableNumber == 6:
+                        randomPick = random.choice(classList)
+                        table6.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table6) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 7:
+                    while tableNumber == 7:
+                        randomPick = random.choice(classList)
+                        table7.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table7) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 8:
+                    while tableNumber == 8:
+                        randomPick = random.choice(classList)
+                        table8.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table8) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 9:
+                    while tableNumber == 9:
+                        randomPick = random.choice(classList)
+                        table9.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table9) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 10:
+                    while tableNumber == 10:
+                        randomPick = random.choice(classList)
+                        table10.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table10) == maxGroup:
+                            tableNumber += 1
+                print("Table 1: ", table1)
+                print("Table 2: ", table2)
+                print("Table 3: ", table3)
+                print("Table 4: ", table4)
+                print("Table 5: ", table5)
+                print("Table 6: ", table6)
+                print("Table 7: ", table7)
+                print("Table 8: ", table8)
+                print("Table 9: ", table9)
+                print("Table 10: ", table10)
+                
+                break
         
-        constnam1 = input()
+        else:
         
-        constnam2 = input()
-        
-        
-   
-
-
-
-
-        table1 = []        #code for the table format down here
-        table2 = []
-        table3 = []
-        table4 = []
-        table5 = []
-        table6 = []
-        table7 = []
-        table8 = []
-        table9 = []
-        table10 = []
-        
-        
-        classList = ["Art", "Bart", "Cart", "Dart", "Eart", "Fart", "Gart", "Hart", "Iart", "Jart", "Kart", "Lart", "Mart", "Nart", "Oart", "Part", "Qart", "Rart", "Sart", "Tart"]
-        
-        tableNumber = 1
-        
-        randomPick = []
-        
-        while len(classList) > 0:
-          randomPick = random.choice(classList)
-          if tableNumber == 1:
-            table1.append(randomPick)
-          if tableNumber == 2:
-            table2.append(randomPick)
-          if tableNumber == 3:
-            table3.append(randomPick)
-          if tableNumber == 4:
-            table4.append(randomPick)
-          if tableNumber == 5:
-            table5.append(randomPick)
-          if tableNumber == 6:
-            table6.append(randomPick)
-          if tableNumber == 7:
-            table7.append(randomPick)
-          if tableNumber == 8:
-            table8.append(randomPick)
-          if tableNumber == 9:
-            table9.append(randomPick)
-          if tableNumber == 10:
-            table10.append(randomPick)
-            classList.remove(randomPick)
-          tableNumber = tableNumber + 1
-          if tableNumber == 11:
-            tableNumber = 1
-          
-        #2/28/26, modify table code by using len function to limit how much a class can have based off of each group
-        
-        print("Table 1: ", table1)
-        print("Table 2: ", table2)
-        print("Table 3: ", table3)
-        print("Table 4: ", table4)
-        print("Table 5: ", table5)
-        print("Table 6: ", table6)
-        print("Table 7: ", table7)
-        print("Table 8: ", table8)
-        print("Table 9: ", table9)
-        print("Table 10: ", table10)
-        
-        break    
+            constnum2 = float(input())
     
+    elif decidegroupnum == 3: 
+        maxGroup = 3 #modifying dependent on how many people allowed in groups, you decide this when running the code
+        print (f"If there is any constraint, type the number of the person in the hardcode in their order, starting from 1-20 \n For example... if you want the 5th person,(In your list this is {classList[4]})and the 8th person (In your list this is {classList[7]}) to not be together, type 5, then 8.\n If you don't care for any constraints. Type 0.")
+        #due to it being from 1-20 and index's working from 0-19 must add +1 to any value
+        constnum = float(input())
+        
+        if constnum == 0:
+            while len(classList) > 0:
     
-    elif decidegroupnum == 3:
+                if tableNumber == 1:
+                    while tableNumber == 1:
+                        randomPick = random.choice(classList)
+                        table1.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table1) == maxGroup:    
+                            tableNumber += 1
+                if tableNumber == 2:
+                    while tableNumber == 2:
+                        randomPick = random.choice(classList)
+                        table2.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table2) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 3:
+                    while tableNumber == 3:
+                        randomPick = random.choice(classList)
+                        table3.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table3) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 4:
+                    while tableNumber == 4:
+                        randomPick = random.choice(classList)
+                        table4.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table4) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 5:
+                    while tableNumber == 5:
+                        randomPick = random.choice(classList)
+                        table5.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table5) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 6:
+                    while tableNumber == 6:
+                        randomPick = random.choice(classList)
+                        table6.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table6) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 7:
+                    while tableNumber == 7:
+                        randomPick = random.choice(classList)
+                        table7.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table7) == 2:  #due to there being an uneven amount of students separated
+                            tableNumber += 1
+                
+                print("Table 1: ", table1)
+                print("Table 2: ", table2)
+                print("Table 3: ", table3)
+                print("Table 4: ", table4)
+                print("Table 5: ", table5)
+                print("Table 6: ", table6)
+                print("Table 7: ", table7)
+                
+                
+                break
     
-        print("3")
-
     elif decidegroupnum == 4:
+        maxGroup = 4 #modifying dependent on how many people allowed in groups, you decide this when running the code
+        print (f"If there is any constraint, type the number of the person in the hardcode in their order, starting from 1-20 \n For example... if you want the 5th person,(In your list this is {classList[4]})and the 8th person (In your list this is {classList[7]}) to not be together, type 5, then 8.\n If you don't care for any constraints. Type 0.")
+        #due to it being from 1-20 and index's working from 0-19 must add +1 to any value
+        constnum = float(input())
+        
+        if constnum == 0:
+            while len(classList) > 0:
     
-        print("4")
+                if tableNumber == 1:
+                    while tableNumber == 1:
+                        randomPick = random.choice(classList)
+                        table1.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table1) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 2:
+                    while tableNumber == 2:
+                        randomPick = random.choice(classList)
+                        table2.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table2) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 3:
+                    while tableNumber == 3:
+                        randomPick = random.choice(classList)
+                        table3.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table3) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 4:
+                    while tableNumber == 4:
+                        randomPick = random.choice(classList)
+                        table4.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table4) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 5:
+                    while tableNumber == 5:
+                        randomPick = random.choice(classList)
+                        table5.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table5) == maxGroup:
+                            tableNumber += 1
+            
+                print("Table 1: ", table1)
+                print("Table 2: ", table2)
+                print("Table 3: ", table3)
+                print("Table 4: ", table4)
+                print("Table 5: ", table5)
+            
+                
+                break
     
     else:
-         print ("NO")
-         
-
-
+        
+        print("input 2, 3 or 4 please.")
+        
+        #fornow
+    break
+    
