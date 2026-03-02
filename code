@@ -33,8 +33,8 @@ while decidegroupnum:
     if decidegroupnum == 2:
         maxGroup = 2 #modifying dependent on how many people allowed in groups, you decide this when running the code
         
-        print (f"If there is any constraint, type the number of the person in the hardcode in their order, starting from 1-20 \n For example... if you want the 5th person,(In your list this is {classList[4]})and the 8th person (In your list this is {classList[7]}) to not be together, type 5, then 8.\n If you don't care for any constraints. Type 0.")
-        #due to it being from 1-20 and index's working from 0-19 must add +1 to any value
+        print ("If you don't care for any constraints. Type 0.")
+        #due to it being from 1-20 and index's working from 0-19 must add -1 to any new input value
         constnum = float(input())
         
         if constnum == 0:
@@ -125,15 +125,115 @@ while decidegroupnum:
         
         else:
         
-            constnum2 = float(input())
+            print(f"If there is any constraint, type the number of the person in the hardcode in their order, starting from 1-20 \n For example... if you want the 5th person,(In your list this is {classList[4]})and the 8th person (In your list this is {classList[7]}) to not be together, type 5, then 8.")
             
-            constnum = (input()) -
+            constnum = int(input()) - 1
+            constnum2 = int(input()) - 1
             
-            print(constnum)
+            print (f"{classList[constnum]} and {classList[constnum2]} are your exceptions and will automatically put separately.")
             
-           
+            #New table for the exceptions to work
             
+            table1 = [classList[constnum]]        #code for the table format down here
+            table2 = [classList[constnum2]]
+            table3 = []
+            table4 = []
+            table5 = []
+            table6 = []
+            table7 = []
+            table8 = []
+            table9 = []
+            table10 = []
             
+            classList.remove(classList[constnum])
+            classList.remove(classList[constnum2])
+            
+            while len(classList) > 0:
+    
+                if tableNumber == 1:
+                    while tableNumber == 1:
+                        randomPick = random.choice(classList)
+                        table1.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table1) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 2:
+                    while tableNumber == 2:
+                        randomPick = random.choice(classList)
+                        table2.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table2) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 3:
+                    while tableNumber == 3:
+                        randomPick = random.choice(classList)
+                        table3.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table3) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 4:
+                    while tableNumber == 4:
+                        randomPick = random.choice(classList)
+                        table4.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table4) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 5:
+                    while tableNumber == 5:
+                        randomPick = random.choice(classList)
+                        table5.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table5) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 6:
+                    while tableNumber == 6:
+                        randomPick = random.choice(classList)
+                        table6.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table6) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 7:
+                    while tableNumber == 7:
+                        randomPick = random.choice(classList)
+                        table7.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table7) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 8:
+                    while tableNumber == 8:
+                        randomPick = random.choice(classList)
+                        table8.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table8) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 9:
+                    while tableNumber == 9:
+                        randomPick = random.choice(classList)
+                        table9.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table9) == maxGroup:
+                            tableNumber += 1
+                if tableNumber == 10:
+                    while tableNumber == 10:
+                        randomPick = random.choice(classList)
+                        table10.append(randomPick)
+                        classList.remove(randomPick)
+                        if len(table10) == maxGroup:
+                            tableNumber += 1
+                print("Table 1: ", table1)
+                print("Table 2: ", table2)
+                print("Table 3: ", table3)
+                print("Table 4: ", table4)
+                print("Table 5: ", table5)
+                print("Table 6: ", table6)
+                print("Table 7: ", table7)
+                print("Table 8: ", table8)
+                print("Table 9: ", table9)
+                print("Table 10: ", table10)
+                
+                break
+            #3/2/26, finish by making exceptions possible for groups of 3 & 4, 
+        
     
     elif decidegroupnum == 3: 
         maxGroup = 3 #modifying dependent on how many people allowed in groups, you decide this when running the code
