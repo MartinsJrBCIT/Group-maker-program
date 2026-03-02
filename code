@@ -126,6 +126,14 @@ while decidegroupnum:
         else:
         
             constnum2 = float(input())
+            
+            constnum = (input()) -
+            
+            print(constnum)
+            
+           
+            
+            
     
     elif decidegroupnum == 3: 
         maxGroup = 3 #modifying dependent on how many people allowed in groups, you decide this when running the code
