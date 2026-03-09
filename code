@@ -133,15 +133,15 @@ while decidegroupnum:
             constnum = int(input()) - 1
             constnum2 = int(input()) - 1
             
-            exceptionTable = [classList[constnum], classList[constnum2]] #table where exceptions will be put in, then placed in table lists.
-
+            exception1 = classList[constnum]
+            exception2 = classList[constnum2]
+            
             print (f"{classList[constnum]} and {classList[constnum2]} are your exceptions and will automatically put separately.")
             
             #New table for the exceptions to work
             
-            table1 = [exceptionTable[0]]  
-              #code for the table format down here
-            table2 = [exceptionTable[1]]
+            table1 = [exception1]  
+            table2 = [exception2]
             table3 = []
             table4 = []
             table5 = []
@@ -151,9 +151,8 @@ while decidegroupnum:
             table9 = []
             table10 = []
             
-            exceptionTable.remove(exceptionTable[0])
-            classList.remove(exceptionTable[0])
-            
+            classList.remove(exception2)
+            classList.remove(exception1)
             while len(classList) > 0:
     
                 if tableNumber == 1:
@@ -318,11 +317,14 @@ while decidegroupnum:
             constnum = int(input()) - 1
             constnum2 = int(input()) - 1
             
+            exception1 = classList[constnum]
+            exception2 = classList[constnum2]
+            
             print (f"{classList[constnum]} and {classList[constnum2]} are your exceptions and will automatically put separately.")
             
             #New table for exceptions
-            table1 = [classList[constnum]]        #code for the table format down here
-            table2 = [classList[constnum2]]
+            table1 = [exception1]        #code for the table format down here
+            table2 = [exception2]
             table3 = []
             table4 = []
             table5 = []
@@ -330,8 +332,8 @@ while decidegroupnum:
             table7 = []
             
 
-            classList.remove(classList[constnum])
-            classList.remove(classList[constnum2])
+            classList.remove(exception1)
+            classList.remove(exception2)
 
             while len(classList) > 0:
     
@@ -456,20 +458,23 @@ while decidegroupnum:
 
             constnum = int(input()) - 1
             constnum2 = int(input()) - 1
+            
+            exception1 = classList[constnum]
+            exception2 = classList[constnum2]
 
             print (f"{classList[constnum]} and {classList[constnum2]} are your exceptions and will automatically put separately.")
 
             #New table for exceptions
-            table1 = [classList[constnum]]        #code for the table format down here
-            table2 = [classList[constnum2]]
+            table1 = [exception1]        #code for the table format down here
+            table2 = [exception2]
             table3 = []
             table4 = []
             table5 = []
             
             
 
-            classList.remove(classList[constnum])
-            classList.remove(classList[constnum2])
+            classList.remove(exception1)
+            classList.remove(exception2)
 
             while len(classList) > 0:
     
@@ -523,6 +528,6 @@ while decidegroupnum:
         
         print("input 2, 3 or 4 please.")
         
-        #fornow
+        
     break
     
